@@ -169,7 +169,7 @@ def rerank_expanded_evidence(query,evidence_documents,final_k=6):
                 "score": float(
                     scores[index]
                 )
-            }
+            })
 
     # Higher CrossEncoder score = better relevance.
     scored_documents = sorted(
